@@ -1,0 +1,289 @@
+
+.main {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.section {
+  width: 100%;
+  height: 100%;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.dark-section {
+  background-color: var(--bg-dark);
+  width: 100%;
+}
+
+
+
+.section-visiting {
+  scroll-behavior: smooth;
+}
+
+
+.section-header {
+  text-transform: uppercase;
+  color: var(--font-gold);
+  width: 660px;
+  height: 115px;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+
+.section-header-virtual-tour {
+  margin-bottom: 75px;
+
+}
+
+.dark-header {
+  color: #ffffff;
+}
+
+/****************/
+
+.welcome-header {
+  margin-top: 0;
+  width: 600px;
+  padding-top: 180px;
+  position: relative;
+  z-index: 2;
+}
+
+.container-welcome {
+  display: flex;
+  flex-direction: row;
+  height: 810px;
+}
+
+.section-paragraph {
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
+  margin-bottom: 75px;
+  color: #FFFFFF;
+
+}
+
+
+
+.section-header-underline {
+  border-bottom-style: solid;
+  border-bottom-color: var(--dark-red);
+  width: 1420px;
+
+}
+.section-header-underline-explore {
+  width: 660px;
+}
+.card-red-line {
+  width: 70%;
+  color: var(--dark-red);
+}
+
+.card-red-line:hover {
+  width: 100%;
+}
+.VirtualTour-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 65px;
+  column-gap: 60px;
+}
+
+.VirtualTour-card {
+  display: block;
+  text-decoration: none;
+
+}
+
+.VirtualTour-img {
+  width: 440px ;
+  height: 285px;
+  margin-bottom: 21px;
+
+}
+
+.VirtualTour-header {
+  height: 45px;
+  text-transform: uppercase;
+  color: var(--bg-dark);
+  margin-top: 0;
+  margin-bottom: 20px;
+
+}
+
+.VirtualTour-paragraph {
+  color: var(--bg-dark);
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 60px;
+}
+.video-slider-container{
+  margin-top: 30px;
+  column-gap: 42px;
+}
+.explore-container {
+  display: flex;
+  flex-direction: column;
+  width: 660px;
+}
+
+
+
+.video-journey-paragraph {
+  color: var(--bg-dark);
+  width: 720px;
+  height: 90px;
+  margin-top: 70px;
+  margin-bottom: 75px;
+}
+
+.gold {
+  color: var(--font-gold)
+}
+
+.explore-img {
+  width: 720px;
+  height: 700px;
+  margin-top: 90px;
+  margin-bottom: 15px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.tickets-container-img {
+  width: 720px;
+  height: 550px;
+}
+
+.ticket-type-input {
+}
+
+
+.tickets-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.tickets-form-type {
+  border-color: transparent;
+}
+
+.tickets-form-amount {
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.counter {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-style: solid;
+  border-color: var(--bg-dark);
+  border-width: 3px;
+
+}
+
+.counter-button {
+  background-color: #FFFFFF;
+  border-style: none;
+  color: var(--bg-dark);
+}
+
+.counter-input {
+  width: 55px;
+  height: 30px;
+  border-style: none;
+  text-align: center;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.contacts-header{
+  width: 227px;
+}
+
+.phone-mail-Link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.phone-mail-Link:hover {
+  color: var(--font-gold);
+}
+
+.phone-mail-Link:active {
+  color: #7E6C51;
+}
+
+.section-buy-tickets-img {
+  width: 1920px;
+}
+
+.section-buy-tickets-parallax {
+  width: 100%;
+  min-height: 500px;
+  background-image: url("assets/img/parallax.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+
+/*....gallery*/
+
+.gallery-picture-container {
+  height: 2100px;
+  width: 1440px;
+  overflow-y: hidden;
+}
+
+.gallery-picture-inner-cont {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 24px;
+
+}
+
+.gallery-picture {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+
+

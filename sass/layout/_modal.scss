@@ -1,0 +1,284 @@
+/*//form ------------------*/
+.gold-logo {
+  width: 85px;
+  height: 41px;
+}
+.blur {
+  z-index: 2;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: 1px 1px 13px -1px rgba(34, 60, 80, 0.11);
+  padding-left: 0px;
+  padding-right: 16px;
+  padding-top: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(25px);
+}
+.book-ticket-popup {
+  display: flex;
+  position: fixed;
+  top: 200px;
+  z-index: 2;
+  background-color: white;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 55px;
+  width: 1440px;
+  height: 845px;
+}
+
+.booking-tickets-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.ticket-popup-form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.booking-header {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  letter-spacing: 0;
+}
+
+.booking-par {
+  margin-top: 10px;
+  margin-bottom: 48px;
+}
+
+.svg {
+  margin-left: 10px;
+}
+.input-tickets {
+  border-color: transparent;
+}
+
+.input-div {
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-color: #030303;
+  border-width: 1px;
+  width: 400px;
+  height: 45px;
+  /*margin-top: 10px;*/
+  margin-bottom: 10px;
+}
+
+.input-div-short {
+  width: 190px;
+}
+
+.input-div-short-margin10 {
+  margin-right: 17px;
+}
+.entry-ticket {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  width: 400px;
+}
+
+.entry-ticket-header {
+  margin-left: 10px;
+  margin-bottom: 6px;
+}
+
+.wrap-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wrap-start {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrap-col {
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+}
+
+.counter-small {
+  width: 105px;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.tickets-overview {
+  width: 530px;
+  height: 663px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #030303;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.overview-header {
+  margin: 0;
+  padding-right: 50px;
+  padding-top: 15px;
+}
+.label-overview {
+  margin-left: 10px;
+}
+.close-popup {
+  position: relative;
+  top: -40px;
+  left: 1130px;
+  width: 25px;
+  height: 25px;
+}
+
+.night-louvre-pic {
+  display: block;
+  width: 150px;
+  height: 120px;
+}
+
+.red-border {
+  border-bottom-style: solid;
+  border-bottom-color: var(--dark-red);
+  border-width: 3px;
+  height: 70px;
+}
+
+.overview-par {
+  margin: 0;
+}
+
+.card1 {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  background-color: #BCBCBC;
+  border-radius: 5px;
+  width: 360px;
+  height: 211px;
+  /*padding-left: 30px;*/
+  /*padding-right: 30px;*/
+  /*padding-top: 15px;*/
+  /*padding-bottom: 15px;*/
+  z-index: 3;
+}
+
+.card2 {
+  position: relative;
+  top: -185px;
+  left: 170px;
+  width: 360px;
+  height: 211px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #939393;
+  border-radius: 5px;
+}
+.black-rectangle {
+  width: 320px;
+  height: 45px;
+  background-color: #030303;
+}
+
+#cvc {
+  width: 75px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+.card2-par {
+  width: 50px;
+  height: 55px;
+  font-size: 10px;
+  line-height: 12px;
+  color: #161615;
+  margin-right: 20px;
+
+}
+.cvc-label {
+  margin-right: 20px;
+  color: #161615;
+}
+.date-time-div {
+  display: flex;
+  flex-direction: row;
+}
+.card1-logo {
+  position: relative;
+  right: 60px;
+  top: 25px;
+}
+#cardNumber {
+  width: 215px;
+  height: 35px;
+  color: #161615;
+}
+
+#month {
+  width: 100px;
+  height: 35px;
+  margin-right: 7px;
+  color: #161615;
+
+}
+
+#year {
+  width: 100px;
+  height: 35px;
+  color: #161615;
+}
+
+#inputText {
+  width: 320px;
+  height: 35px;
+  color: #161615;
+}
+
+.card1-label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #161615;
+}
+.wrap-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.book-button {
+  position: relative;
+  bottom: 150px;
+  left: 308px;
+  width: 220px;
+  height: 45px;
+  background-color: var(--dark-red);
+  color: #FFFFFF;
+}
