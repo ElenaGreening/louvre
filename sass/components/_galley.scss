@@ -1,0 +1,25 @@
+.gallery-section{
+  background-color: $color-background-dark;
+  width: 100%;
+}
+
+.gallery-picture-container {
+  height: 2100px;
+  width: 1440px;
+  overflow-y: hidden;
+}
+
+.gallery-picture-inner-cont {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 24px;
+
+}
+
+.gallery-picture {
+  margin-right: 8px;
+  margin-left: 8px;
+}

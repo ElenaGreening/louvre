@@ -1,0 +1,20 @@
+.welcome-section{
+  width: 100%;
+background-color: $color-background-dark;
+}
+
+.welcome-header {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 0;
+  width: 600px;
+  padding-top: 180px;
+  position: relative;
+  z-index: 2;
+}
+
+.container-welcome {
+  display: flex;
+  flex-direction: row;
+  //height: 810px;
+}

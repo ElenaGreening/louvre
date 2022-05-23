@@ -1,0 +1,93 @@
+.tickets-section{
+
+}
+.tickets-container-img {
+  width: 720px;
+  height: 550px;
+}
+
+.ticket-type-input {
+}
+
+
+.tickets-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.tickets-form-type {
+  border-color: transparent;
+}
+
+.tickets-form-amount {
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.counter {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-style: solid;
+  border-color: var(--bg-dark);
+  border-width: 3px;
+
+}
+
+.counter-button {
+  background-color: #FFFFFF;
+  border-style: none;
+  color: $color-background-dark;
+  font-size: 32px;
+  line-height: 5px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.counter-input {
+  width: 55px;
+  height: 30px;
+  border-style: none;
+  text-align: center;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.contacts-header{
+  width: 227px;
+}
+
+.phone-mail-Link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.phone-mail-Link:hover {
+  color: var(--font-gold);
+}
+
+.phone-mail-Link:active {
+  color: #7E6C51;
+}
+
+.section-buy-tickets-img {
+  width: 1920px;
+}
+
+.section-buy-tickets-parallax {
+  width: 100%;
+  min-height: 500px;
+  background-image: url("../assets/img/parallax.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+

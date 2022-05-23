@@ -1,19 +1,13 @@
 .header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-
+  background-color: $color-background-dark;
 }
 
-.header-container {
+.header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--bg-dark);
-  width: 1440px;
   height: 95px;
-  margin-top: 0;
-  padding-top: 0;
+  width: 100%;
 }
 
 .nav-list {
@@ -27,7 +21,6 @@
   list-style: none;
   padding-left: 20px;
   padding-right: 20px;
-  scroll-behavior: smooth;
 }
 
 .anchor-link {
@@ -107,8 +100,6 @@
   list-style: none;
   text-align: center;
   background-color: #030303;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 23px;
@@ -120,7 +111,6 @@
   display: block;
   padding: 12px 24px;
   color: #333;
-  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
@@ -153,6 +143,7 @@
     visibility: hidden;
   }
   .header-container {
+    max-width: 1140px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -179,22 +170,4 @@
     letter-spacing: 5px;
     text-transform: uppercase;
   }
-  .slider-pic {
-    width: 700px;
-    height: 525px;
-  }
-
-  .welcome-slider-img {
-    width: 700px;
-    height: 525px;
-  }
-  .welcome-slider-container {
-    width: 700px;
-    height: 120px;
-  }
-  .welcome-section-button {
-    width: 300px;
-    height: 60px;
-  }
-
 }

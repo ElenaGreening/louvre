@@ -1,16 +1,18 @@
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+//.footer {
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//}
+
+.footer-section {
+background-color: $color-background-dark;
 }
 
 .margin-container {
   margin-bottom: 75px;
 }
 .footer-container{
-  margin: 0 auto;
   margin-bottom: 54px;
-  max-width: 1440px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -80,6 +82,10 @@
 
 .nav-element-footer {
   color: #FFFFFF;
+  letter-spacing: 2px;
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .bottom-footer-list {

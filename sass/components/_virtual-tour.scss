@@ -1,0 +1,40 @@
+.virtual-tour-section{
+
+}
+
+.virtual-tour-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 65px;
+  column-gap: 60px;
+}
+
+.virtual-tour-card {
+  display: block;
+  text-decoration: none;
+
+}
+
+.virtual-tour__img {
+  width: 440px ;
+  height: 285px;
+  margin-bottom: 21px;
+
+}
+
+.virtual-tour__header {
+  height: 45px;
+  text-transform: uppercase;
+  color: var(--bg-dark);
+  margin-top: 0;
+  margin-bottom: 20px;
+
+}
+
+.virtual-tour__paragraph {
+  color: var(--bg-dark);
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
