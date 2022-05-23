@@ -18,12 +18,12 @@
 .buy-button {
   width: 175px;
   height: 50px;
-  background-color: var(--bg-dark);
+  background-color: $color-background-dark;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
   text-align: center;
   letter-spacing: 2px;
   color: #FFFFFF;
