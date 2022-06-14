@@ -1,6 +1,9 @@
+@import "../node_modules/normalize-scss/sass/normalize";
+@import "abstracts/mixins";
 @import "abstracts/variables";
 @import "base/base";
 @import "abstracts/fonts";
+@import "abstracts/placeholder";
 @import "layout/wrapper";
 @import "components/buttons";
 @import "components/header";

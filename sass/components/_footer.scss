@@ -1,9 +1,3 @@
-//.footer {
-//  display: flex;
-//  flex-direction: column;
-//  align-items: center;
-//}
-
 .footer-section {
 background-color: $color-background-dark;
 }
@@ -27,7 +21,7 @@ background-color: $color-background-dark;
 }
 
 
-.footer-navigation {
+.footer__navigation {
   display: flex;
   flex-direction: row;
 }
@@ -35,58 +29,53 @@ background-color: $color-background-dark;
   list-style: none;
   margin: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding-left: 120px;
   column-gap: 130px;
-}
-.footer-nav-list-anchors {
   width: 300px;
   height: 100px;
-  display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
 }
 
-.footer-nav-list-social {
+.footer-social {
   column-gap: 25px;
   padding-top: 75px;
+
+  .social__elem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-style: solid;
+    border-color: #666666;
+    border-radius: 50%;
+    &:hover {
+      @extend %transition;
+      border-color: $color-hover;
+      .logo-svg{
+        fill: $color-hover;
+        @extend %transition;
+      }
+    }
+    &:active {
+      border-color: #7E6C51;
+    }
+  }
 }
 
-.footer-nav-list-social-elem{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
-  border-style: solid;
-  border-color: #666666;
-  border-radius: 50%;
-}
-.footer-nav-list-social-elem:hover {
-  border-color: var(--font-gold)
-}
-.footer-nav-list-social-elem:active {
-  border-color: #7E6C51;
-}
 
 
-/*.footer-nav-div {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    row-gap: 25px;*/
-/*    margin: 0;*/
 
-/*}*/
-
-.nav-element-footer {
-  color: #FFFFFF;
-  letter-spacing: 2px;
-  list-style: none;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+//.nav-element-footer {
+//  //color: #FFFFFF;
+//  //letter-spacing: 2px;
+//  //list-style: none;
+//  //padding-left: 20px;
+//  //padding-right: 20px;
+//}
 
 .bottom-footer-list {
   display: flex;
@@ -112,12 +101,4 @@ background-color: $color-background-dark;
   line-height: 22px;
   color: #FFFFFF;
   margin-right: 200px;
-}
-
-.social-youtube {
-  fill: #ffffff;
-}
-
-.social-youtube:hover {
-  fill: #7E6C51;
 }

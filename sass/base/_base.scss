@@ -6,41 +6,27 @@
   margin: 0 auto;
   width: 100%;
   overflow-x: hidden;
-  font-size: 2.2rem;
   font-family: "Roboto", sans-serif;
-  font-weight: 200;
-  line-height: 26px;
+@include font(2.2 rem, 2.6rem, 200)
 }
 
 
 
 h1{
-  font-family: 'Forum', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 80px;
-  line-height: 90px;
+  @extend %font-add;
+  @include font(8rem, 9rem)
 }
 
 h2{
-  font-family: 'Forum', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 80px;
-  line-height: 90px;
+  @extend %font-add;
+  @include font(8rem, 9rem)
 }
 
 h3 {
-  font-family: 'Forum', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 35px;
+  @extend %font-add;
+  @include font(3.2rem, 3.5rem)
 }
 
 h4{
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 33px;
+  @include font(2.8rem, 3.3rem, 500)
 }
