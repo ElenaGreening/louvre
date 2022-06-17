@@ -5,15 +5,17 @@
 }
 
 .slider-switcher {
-  width: 100%;
   height: 120px;
+  width: 31%;
   background-color: #030303;
   display: flex;
   flex-direction: row;
   align-items: center;
-  column-gap: 40px;
-  justify-content: flex-end;
-  z-index: 1;
+  column-gap: 50px;
+  justify-content: center;
+  z-index: 2;
+  position: absolute;
+  bottom: 120px;
 }
 
 .arrow-wrapper {
@@ -23,6 +25,7 @@
 .slider-counter {
   color: #FFFFFF;
   font-weight: 400;
+  letter-spacing: 3px;
 }
 .slider-list {
   display: flex;
@@ -39,11 +42,12 @@
 .slider-button {
   background-color: #FFFFFF;
   width: 16px;
-  height: 16px
+  height: 16px;
+  &:hover {
+    background-color: var(--font-gold);
+  }
 }
-.slider-button:hover {
-  background-color: var(--font-gold);
-}
+
 
 .slider-button.active {
   background-color: #7E6C51;
@@ -61,6 +65,8 @@
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  padding: 0;
+  margin: 0;
 }
 
 .welcome-slider-img {

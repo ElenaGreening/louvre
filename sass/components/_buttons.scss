@@ -9,12 +9,14 @@
   text-decoration: none;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  letter-spacing: 2px;
+  font-weight: 300;
   @extend %transition;
+  &:hover {
+    background-color: var(--font-gold);
+  }
 }
-.welcome-section-button:hover {
-  background-color: var(--font-gold);
-}
+
 
 .buy-button {
   width: 175px;
@@ -29,13 +31,13 @@
   letter-spacing: 2px;
   color: #FFFFFF;
   @extend %transition;
+  &:hover {
+    background-color: var(--font-gold);
+    border-color: #9d8665;
+  }
+
+  &:active {
+    background-color: #7E6C51;
+  }
 }
 
-.buy-button:hover {
-  background-color: var(--font-gold);
-  border-color: #9d8665;
-}
-
-.buy-button:active {
-  background-color: #7E6C51;
-}

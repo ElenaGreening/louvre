@@ -7,24 +7,28 @@
   width: 100%;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
-@include font(2.2 rem, 2.6rem, 200)
+  @include font(2.2rem, 2.6rem, 200)
 }
 
 
 
 h1{
   @extend %font-add;
-  @include font(8rem, 9rem)
+  @include font(8rem, 9rem);
+  letter-spacing: 0.5rem;
+
 }
 
 h2{
   @extend %font-add;
-  @include font(8rem, 9rem)
+  @include font(8rem, 9rem);
+  letter-spacing: 0.5rem;
 }
 
 h3 {
   @extend %font-add;
-  @include font(3.2rem, 3.5rem)
+  @include font(3.2rem, 3.5rem);
+  letter-spacing: 0.5rem;
 }
 
 h4{

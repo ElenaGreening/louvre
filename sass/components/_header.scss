@@ -3,11 +3,10 @@
 }
 
 .header__wrapper {
-  padding-top: 30px;
+  padding-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 95px;
   width: 100%;
 }
 
@@ -15,18 +14,22 @@
   display: flex;
   padding: 0;
   margin: 0;
-  &_element {
-    letter-spacing: 2px;
-    list-style: none;
-    padding: 0px 20px 0px 20px;
-  }
+  column-gap: 55px;
 }
 
+.header__navigation{
+}
+
+.navigation__element {
+  letter-spacing: 2px;
+  list-style: none;
+  //padding: 0 20px;
+  cursor: pointer;
+}
 
 .anchor-link {
   text-decoration: none;
   color: #FFFFFF;
-  cursor: pointer;
   &:hover {
     color: var(--font-gold);
     @extend %transition;}
@@ -34,9 +37,6 @@
   &:active {
     color: #7E6C51;
   }
-}
-
-.header__navigation{
 }
 
 
@@ -112,7 +112,7 @@
   display: block;
   padding: 12px 24px;
   color: #333;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
   text-decoration: none;
 }
@@ -160,11 +160,8 @@
     display: none;
   }
   .section-header {
+    @include font(5rem,7.5rem, normal);
     font-family: Forum, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    line-height: 75px;
     letter-spacing: 5px;
     text-transform: uppercase;
   }

@@ -22,7 +22,7 @@ section, header, footer, main, article {
   width: 100%;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
-  font-size: 2.2 rem;
+  font-size: 2.2rem;
   font-weight: 200;
   font-style: normal;
   line-height: 2.6rem;
@@ -33,6 +33,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
   line-height: 9rem;
+  letter-spacing: 0.5rem;
 }
 
 h2 {
@@ -40,6 +41,7 @@ h2 {
   font-weight: 400;
   font-style: normal;
   line-height: 9rem;
+  letter-spacing: 0.5rem;
 }
 
 h3 {
@@ -47,6 +49,7 @@ h3 {
   font-weight: 400;
   font-style: normal;
   line-height: 3.5rem;
+  letter-spacing: 0.5rem;
 }
 
 h4 {
@@ -82,7 +85,7 @@ h4 {
   color: var(--dark-red);
 }
 
-.footer-social .social__elem:hover .logo-svg, .footer-social .social__elem:hover, .anchor-link:hover, .buy-button, .welcome-section-button {
+.card-red-line:hover, .footer-social .social__elem:hover .logo-svg, .footer-social .social__elem:hover, .virtual-tour-card:hover .card-red-line, .anchor-link:hover, .buy-button, .welcome-section-button {
   transition: all 0.3s ease-out;
 }
 
@@ -106,9 +109,9 @@ h1, h2, h3 {
   text-decoration: none;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  letter-spacing: 2px;
+  font-weight: 300;
 }
-
 .welcome-section-button:hover {
   background-color: var(--font-gold);
 }
@@ -126,12 +129,10 @@ h1, h2, h3 {
   letter-spacing: 2px;
   color: #FFFFFF;
 }
-
 .buy-button:hover {
   background-color: var(--font-gold);
   border-color: #9d8665;
 }
-
 .buy-button:active {
   background-color: #7E6C51;
 }
@@ -141,11 +142,10 @@ h1, h2, h3 {
 }
 
 .header__wrapper {
-  padding-top: 30px;
+  padding-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 95px;
   width: 100%;
 }
 
@@ -153,17 +153,18 @@ h1, h2, h3 {
   display: flex;
   padding: 0;
   margin: 0;
+  column-gap: 55px;
 }
-.navigation_element {
+
+.navigation__element {
   letter-spacing: 2px;
   list-style: none;
-  padding: 0px 20px 0px 20px;
+  cursor: pointer;
 }
 
 .anchor-link {
   text-decoration: none;
   color: #FFFFFF;
-  cursor: pointer;
 }
 .anchor-link:hover {
   color: var(--font-gold);
@@ -246,7 +247,7 @@ h1, h2, h3 {
   display: block;
   padding: 12px 24px;
   color: #333;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
   text-decoration: none;
 }
@@ -298,66 +299,98 @@ h1, h2, h3 {
   }
 
   .section-header {
-    font-family: Forum, sans-serif;
-    font-style: normal;
+    font-size: 5rem;
     font-weight: normal;
-    font-size: 50px;
-    line-height: 75px;
+    font-style: normal;
+    line-height: 7.5rem;
+    font-family: Forum, sans-serif;
     letter-spacing: 5px;
     text-transform: uppercase;
   }
 }
 .welcome-section {
   width: 100%;
+  padding-bottom: 60px;
   background-color: #030303;
 }
 
 .welcome-header {
+  position: absolute;
+  z-index: 2;
+  top: 300px;
   text-transform: uppercase;
+  letter-spacing: 0.5rem;
   color: #FFFFFF;
   margin-top: 0;
-  width: 600px;
-  padding-top: 180px;
-  position: relative;
-  z-index: 2;
 }
 
 .container-welcome {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.section-paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 75px;
+  padding-top: 145px;
+  color: #FFFFFF;
+  font-weight: 300;
+  letter-spacing: 2px;
+  width: 101%;
+}
+
+.virtual-tour-section {
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .virtual-tour-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  row-gap: 65px;
+  row-gap: 75px;
   column-gap: 60px;
+  padding-top: 75px;
 }
 
 .virtual-tour-card {
   display: block;
   text-decoration: none;
 }
+.virtual-tour-card:hover .card-red-line {
+  width: 100%;
+}
 
 .virtual-tour__img {
   width: 440px;
   height: 285px;
-  margin-bottom: 21px;
 }
 
 .virtual-tour__header {
   height: 45px;
   text-transform: uppercase;
   color: var(--bg-dark);
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 45px;
 }
 
 .virtual-tour__paragraph {
   color: var(--bg-dark);
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 10px;
+}
+
+.virtual-tour__paragraph_small {
+  font-size: 1.8rem;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 2.1rem;
 }
 
 .explore-section {
@@ -925,15 +958,17 @@ h1, h2, h3 {
 }
 
 .slider-switcher {
-  width: 100%;
   height: 120px;
+  width: 31%;
   background-color: #030303;
   display: flex;
   flex-direction: row;
   align-items: center;
-  column-gap: 40px;
-  justify-content: flex-end;
-  z-index: 1;
+  column-gap: 50px;
+  justify-content: center;
+  z-index: 2;
+  position: absolute;
+  bottom: 120px;
 }
 
 .arrow-wrapper {
@@ -943,6 +978,7 @@ h1, h2, h3 {
 .slider-counter {
   color: #FFFFFF;
   font-weight: 400;
+  letter-spacing: 3px;
 }
 
 .slider-list {
@@ -961,7 +997,6 @@ h1, h2, h3 {
   width: 16px;
   height: 16px;
 }
-
 .slider-button:hover {
   background-color: var(--font-gold);
 }
@@ -981,6 +1016,8 @@ h1, h2, h3 {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  padding: 0;
+  margin: 0;
 }
 
 .welcome-slider-img {
@@ -1010,13 +1047,12 @@ h1, h2, h3 {
   text-transform: uppercase;
   color: var(--font-gold);
   width: 660px;
-  height: 115px;
-  margin-top: 50px;
-  margin-bottom: 90px;
 }
 
 .section-header-virtual-tour {
-  margin-bottom: 75px;
+  margin: 0;
+  padding-bottom: 25px;
+  width: 100%;
   border-bottom-style: solid;
   border-bottom-color: var(--dark-red);
 }
@@ -1026,15 +1062,6 @@ h1, h2, h3 {
 }
 
 /****************/
-.section-paragraph {
-  position: relative;
-  z-index: 2;
-  margin-top: 0;
-  margin-bottom: 75px;
-  color: #FFFFFF;
-  font-weight: 300;
-}
-
 .section-header-explore {
   border-bottom-style: solid;
   border-bottom-color: var(--dark-red);
@@ -1045,8 +1072,8 @@ h1, h2, h3 {
 .card-red-line {
   width: 70%;
   color: var(--dark-red);
+  margin: 0;
 }
-
 .card-red-line:hover {
   width: 100%;
 }
@@ -1066,7 +1093,6 @@ h1, h2, h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 40px;
 }
 
 .style-icon {

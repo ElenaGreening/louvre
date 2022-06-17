@@ -24,14 +24,17 @@
   text-transform: uppercase;
   color: var(--font-gold);
   width: 660px;
-  height: 115px;
-  margin-top: 50px;
-  margin-bottom: 90px;
+  //height: 115px;
+  //margin-top: 50px;
+  //margin-bottom: 90px;
 }
 
 
 .section-header-virtual-tour {
-  margin-bottom: 75px;
+  //margin-bottom: 75px;
+  margin: 0;
+  padding-bottom: 25px;
+  width: 100%;
   border-bottom-style: solid;
   border-bottom-color: var(--dark-red);
 }
@@ -42,14 +45,6 @@
 
 /****************/
 
-.section-paragraph {
-  position: relative;
-  z-index: 2;
-  margin-top: 0;
-  margin-bottom: 75px;
-  color: #FFFFFF;
-  font-weight: 300;
-}
 
 
 .section-header-explore {
@@ -61,11 +56,14 @@
 .card-red-line {
   width: 70%;
   color: var(--dark-red);
+  margin: 0;
+  &:hover {
+    width: 100%;
+   @extend %transition
+  }
 }
 
-.card-red-line:hover {
-  width: 100%;
-}
+
 
 
 .flex-row {
@@ -86,7 +84,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 40px;
+  //margin-bottom: 40px;
 }
 
 
