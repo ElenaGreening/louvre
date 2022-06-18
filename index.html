@@ -50,7 +50,7 @@
 <main class="main">
     <section class="welcome-section">
         <div class="wrapper container-welcome">
-            <div>
+            <div class="welcome-info-container">
             <h1 class="welcome-header">Welcome <br> to the Louvre</h1>
             <h4 class="section-paragraph">From the castle to the museum</h4>
             <a class="welcome-section-button" href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736" target="_blank">Discover the Louvre</a>
@@ -80,7 +80,7 @@
         </div>
         </div>
     </section>
-    <section class="virtual-tour-section" id="visiting">
+    <section class="section virtual-tour-section" id="visiting">
         <div class="wrapper">
             <h2 class="section-header section-header-virtual-tour">Virtual tour</h2>
             <div class="virtual-tour-container">
@@ -129,35 +129,44 @@
             </div>
         </div>
     </section>
-    <section class="explore-section" id="explore">
+    <section class="section explore-section" id="explore">
         <div class="wrapper flex-row">
             <div class="explore-container">
             <h2 class="section-header section-header-explore">Picture explore</h2>
-                <p class="roboto300 font-white">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
-                <p class="roboto300 font-white">It was cleaned in 1984 to remove a <span class="font-gold">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
-                <p class="roboto300 font-white">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
-            </div>
+                <div class="explore-info-wrap">
+                <p class="explore__info">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
+                <p class="explore__info">It was cleaned in 1984 to remove a <span class="explore__info_gold">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
+                <p class="explore__info">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
+                </div>
+                </div>
             <img class="explore-img" src="assets/img/pictureExplore.png" alt="picture explore">
         </div>
     </section>
-    <section class="video-section" id="video">
+    <section class="section video-section" id="video">
         <div class="wrapper">
-            <div class="flex-row">
-            <h2 class="section-header">Video journey</h2>
+            <div class="video-section-wrap">
+            <h2 class="section-header section-header_video">Video journey</h2>
                 <p class="video-journey-paragraph">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
             </div>
-            <div>
+            <div class="video-player">
                 <div class="video-container">
                     <div>
                         <img src="assets/img/video.png" alt="video Louvre">
                     </div>
                     <div></div>
                 </div>
-                <div class="flex-row video-slider-container">
+                <div class="video-slider-container">
                     <img src="assets/img/VideoSlideItem.png" alt="video exposition">
                     <img src="assets/img/VideoSlideItem2.png" alt="Venus de Milo">
                     <img src="assets/img/VideoSlideItem3.png" alt="promenade">
                 </div>
+                <ul class="slider-list slider-list_video ">
+                    <li class="slider-list__item"><div class="pagination-button"></div></li>
+                    <li class="slider-list__item"><div class="pagination-button"></div></li>
+                    <li class="slider-list__item"><div class="pagination-button"></div></li>
+                    <li class="slider-list__item"><div class="pagination-button"></div></li>
+                    <li class="slider-list__item"><div class="pagination-button"></div></li>
+                </ul>
             </div>
         </div>
     </section>
@@ -170,7 +179,7 @@
             </div>
         </div>
     </section>
-    <section class="tickets-section" id="tickets">
+    <section class="section tickets-section" id="tickets">
         <div class="blur">
         <div class="book-ticket-popup">
             <div class="booking-tickets-wrap">
@@ -285,28 +294,28 @@
             </div>
         </div>
         </div>
-        <div class="wrapper margin-container">
-            <h2 class="section-header font-forum font-forum-80 section-header-underline">Buy tickets</h2>
-            <div class="flex-container">
+        <div class="wrapper tickets-wrapper">
+            <h2 class="section-header section-header-underline">Buy tickets</h2>
+            <div class="tickets-flex-container">
                 <img class="tickets-container-img" src="assets/img/buyTickets.png" alt="painting">
                 <div class="tickets-form">
                     <fieldset class="tickets-form-type">
-                        <h4 class="roboto-normal28 font-weight-700">Ticket Type</h4>
+                        <h4 class="ticket-info">Ticket Type</h4>
                         <div>
                         <input class="ticket-type-input" type="radio" id ="PermanentExhibition" name="Ticket Type">
-                        <label class=" roboto300" for="PermanentExhibition">Permanent exhibition</label>
+                        <label class="roboto300" for="PermanentExhibition">Permanent exhibition</label>
                         </div>
                         <div>
                         <input class="ticket-type-input" type="radio" id="TemporaryExhibition" name="Ticket Type">
-                        <label class=" roboto300" for="TemporaryExhibition">Temporary exhibition</label>
+                        <label class="roboto300" for="TemporaryExhibition">Temporary exhibition</label>
                         </div>
                         <div>
-                        <input  class="ticket-type-input" type="radio" id="CombinedAdmission" name="Ticket Type">
-                        <label  class=" roboto300" for="CombinedAdmission">Combined Admission</label>
+                        <input class="ticket-type-input" type="radio" id="CombinedAdmission" name="Ticket Type">
+                        <label class="roboto300" for="CombinedAdmission">Combined Admission</label>
                         </div>
                     </fieldset>
                     <div class="tickets-form-amount">
-                        <h4 class="roboto-normal28 font-weight-700">Amount</h4>
+                        <h4 class="ticket-info">Amount</h4>
                         <p class=" roboto300 ">Basic 18+</p>
                         <div class="counter"><button class="counter-button">–</button><input class="counter-input counter-inputBasic" type="number" value="1" min="1" max="20"><button class="counter-button counter-buttonIncrBasic">+</button></div>
                         <p class=" roboto300 ">Senior 65+</p>
@@ -319,10 +328,10 @@
         </div>
     </section>
     <div class="section-buy-tickets-parallax"></div>
-    <section class="contacts-section" id="contacts">
+    <section class="section contacts-section" id="contacts">
         <div class="wrapper">
             <h2 class="section-header section-header-underline">Contacts</h2>
-            <div class="flex-container">
+            <div class="flex-container contacts-container">
             <div>
                 <h4 class="contacts-header">Palais Royal Musee du Louvre</h4>
                 <p class="roboto300">address: Paris, France</p>

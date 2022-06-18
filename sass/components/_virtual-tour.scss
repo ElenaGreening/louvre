@@ -1,15 +1,20 @@
 .virtual-tour-section{
-  padding-top: 75px;
-  padding-bottom: 75px;
 }
 
+.section-header-virtual-tour {
+  margin: 0;
+  padding-bottom: 25px;
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-color: var(--dark-red);
+}
 .virtual-tour-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   row-gap: 75px;
   column-gap: 60px;
-  padding-top: 75px;
+  padding-top: 76px;
 }
 
 .virtual-tour-card {

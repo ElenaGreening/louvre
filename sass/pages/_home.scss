@@ -7,52 +7,23 @@
   align-items: center;
 }
 
-
-//.section {
-//  width: 100%;
-//  height: 100%;
-//  padding-top: 25px;
-//  padding-bottom: 30px;
-//}
-//
-//.dark-section {
-//  background-color: var(--bg-dark);
-//}
-
-
 .section-header {
   text-transform: uppercase;
-  color: var(--font-gold);
-  width: 660px;
-  //height: 115px;
-  //margin-top: 50px;
-  //margin-bottom: 90px;
-}
-
-
-.section-header-virtual-tour {
-  //margin-bottom: 75px;
+  color: $color-gold-header;
   margin: 0;
   padding-bottom: 25px;
-  width: 100%;
-  border-bottom-style: solid;
-  border-bottom-color: var(--dark-red);
+}
+.section {
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .white-header {
   color: #ffffff;
 }
 
-/****************/
 
 
-
-.section-header-explore {
-  border-bottom-style: solid;
-  border-bottom-color: var(--dark-red);
-  width: 660px;
-  color: #FFFFFF;
-}
 .card-red-line {
   width: 70%;
   color: var(--dark-red);
@@ -84,7 +55,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  //margin-bottom: 40px;
 }
 
 

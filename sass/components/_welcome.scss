@@ -5,9 +5,10 @@ background-color: $color-background-dark;
 }
 
 .welcome-header {
+  width: 600px;
   position: absolute;
   z-index: 2;
-  top: 300px;
+  bottom: 140px;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   color: #FFFFFF;
@@ -31,4 +32,8 @@ background-color: $color-background-dark;
   font-weight: 300;
   letter-spacing: 2px;
   width: 101%;
+}
+
+.welcome-info-container {
+  position: relative;
 }

@@ -3,15 +3,41 @@
   width: 100%;
 }
 
+.section-header-explore {
+  border-bottom-style: solid;
+  border-bottom-color: var(--dark-red);
+  width: 660px;
+  color: #FFFFFF;
+  padding-bottom: 25px;
+}
+
 .explore-img {
   width: 720px;
-  height: 700px;
-  margin-top: 90px;
-  margin-bottom: 15px;
+  height: 715px;
+  margin: 0;
+  padding-top: 15px;
+
 }
 
 .explore-container {
   display: flex;
   flex-direction: column;
-  width: 660px;
+  row-gap: 75px;
+}
+
+.explore-info-wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 27px;
+}
+
+
+.explore__info{
+  color: #FFFFFF;
+  line-height: 38px;
+  margin: 0;
+  letter-spacing: 0.05px;
+  &_gold{
+    color: $color-text-highlight;
+  }
 }

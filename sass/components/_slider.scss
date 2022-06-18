@@ -2,20 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  position: relative;
 }
 
 .slider-switcher {
   height: 120px;
-  width: 31%;
+  width: 60%;
   background-color: #030303;
   display: flex;
   flex-direction: row;
   align-items: center;
-  column-gap: 50px;
+  column-gap: 55px;
   justify-content: center;
   z-index: 2;
   position: absolute;
-  bottom: 120px;
+  top: 690px;
 }
 
 .arrow-wrapper {
@@ -31,10 +32,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
-.slider-list-item {
+.slider-list__item {
   list-style: none;
 }
 
