@@ -4,6 +4,25 @@
 
 
 .contacts-container{
-  column-gap: 255px;
   padding-top: 80px;
 }
+
+.contacts-header{
+  width: 60%;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+.contacts__info {
+  margin-bottom: 24px;
+}
+.phone-mail-Link {
+  text-decoration: none;
+  color: #000000;
+  &:hover {
+    color: var(--font-gold);
+  }
+  &:active {
+    color: #7E6C51;
+  }
+}
+
