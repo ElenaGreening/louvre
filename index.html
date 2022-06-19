@@ -223,11 +223,11 @@
                    </div>
                 </form>
                 <div class="entry-ticket">
-                    <h3 class="entry-ticket-header font-forum font-forum-18 font-weight-400 font-gold">Entry Ticket</h3>
+                    <h3 class="entry-ticket-header">Entry Ticket</h3>
                     <hr>
                     <div class="wrap-col">
                     <div class="wrap-row">
-                    <label class="label-overview" for="basic" >Basic 18+(20€)</label>
+                    <label class="label-overview" for="basic">Basic 18+(20€)</label>
                         <div class="counter counter-small"><button class="counter-button counter-buttonDecr">–</button><input class="counter-input counter-inputBasic " type="number" id="senior"><button class="counter-button">+</button></div>
                     </div>
 
@@ -300,27 +300,30 @@
                 <img class="tickets-container-img" src="assets/img/buyTickets.png" alt="painting">
                 <div class="tickets-form">
                     <fieldset class="tickets-form-type">
-                        <h4 class="ticket-info">Ticket Type</h4>
-                        <div>
+                        <h4 class="ticket-info_type">Ticket Type</h4>
+                        <div class="ticket-choice">
+                            <div class="custom-input"></div>
                         <input class="ticket-type-input" type="radio" id ="PermanentExhibition" name="Ticket Type">
-                        <label class="roboto300" for="PermanentExhibition">Permanent exhibition</label>
+                        <label class="ticket-label" for="PermanentExhibition">Permanent exhibition</label>
                         </div>
-                        <div>
+                        <div class="ticket-choice">
                         <input class="ticket-type-input" type="radio" id="TemporaryExhibition" name="Ticket Type">
-                        <label class="roboto300" for="TemporaryExhibition">Temporary exhibition</label>
+                        <label class="ticket-label" for="TemporaryExhibition">Temporary exhibition</label>
                         </div>
-                        <div>
+                        <div class="ticket-choice">
                         <input class="ticket-type-input" type="radio" id="CombinedAdmission" name="Ticket Type">
-                        <label class="roboto300" for="CombinedAdmission">Combined Admission</label>
+                        <label class="ticket-label" for="CombinedAdmission">Combined Admission</label>
                         </div>
                     </fieldset>
                     <div class="tickets-form-amount">
-                        <h4 class="ticket-info">Amount</h4>
-                        <p class=" roboto300 ">Basic 18+</p>
+                        <h4 class="ticket-info_amount">Amount</h4>
+                        <div>
+                        <p class="age-type">Basic 18+</p>
                         <div class="counter"><button class="counter-button">–</button><input class="counter-input counter-inputBasic" type="number" value="1" min="1" max="20"><button class="counter-button counter-buttonIncrBasic">+</button></div>
-                        <p class=" roboto300 ">Senior 65+</p>
+                        <p class="age-type">Senior 65+</p>
                         <div class="counter"><button class="counter-button">–</button><input class="counter-input counter-inputSenior" type="number" value="1" min="1" max="20"><button class="counter-button counter-buttonIncrSenior">+</button></div>
-                        <p class="roboto-normal28 font-weight-700">Total <span>€220</span></p>
+                        </div>
+                        <p class="tickets-total">Total<span>€220</span></p>
                         <button class="buy-button">Buy Now</button>
                     </div>
                 </div>

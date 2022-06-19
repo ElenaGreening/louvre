@@ -1,5 +1,5 @@
 .tickets-section{
-  max-width: 1440px;
+  width: 100%;
 }
 .tickets-wrapper{
   display: flex;
@@ -15,29 +15,49 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  column-gap: 57px;
+  column-gap: 60px;
 }
-
+.ticket-choice{
+margin-bottom: 24px;
+}
 .ticket-type-input {
 }
+//.custom-input {
+//  width: 11px;
+//  height: 11px;
+//  border-color: #030303;
+//  border-style: solid;
+//  border-radius: 50px;
+//}
 
-
+.ticket-label{
+  padding-left: 11px;
+}
 .tickets-form {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  //width: 50%;
-  column-gap: 260px;
+  justify-content: space-between;
+  width: 60%;
 }
 
 .tickets-form-type {
+  width: 60%;
   border-color: transparent;
   padding: 0;
 }
-.ticket-info{
+.ticket-info_type{
   margin: 0;
   margin-bottom: 50px;
   font-weight: 700;
+}
+.ticket-info_amount{
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.age-type {
+  margin: 10px 0 15px 0;
 }
 
 .tickets-form-amount {
@@ -60,6 +80,7 @@
 
 }
 
+
 .counter-button {
   background-color: #FFFFFF;
   border-style: none;
@@ -78,7 +99,13 @@
   font-weight: 300;
   line-height: 26px;
 }
-
+.tickets-total {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-top: 55px;
+  margin-bottom: 60px;
+  letter-spacing: 2.8px;
+}
 .contacts-header{
   width: 227px;
 }
