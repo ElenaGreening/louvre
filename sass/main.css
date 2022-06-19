@@ -88,6 +88,12 @@ h1, h2, h3 {
   font-family: "Forum", sans-serif;
 }
 
+.flex-row, .wrap-row, .bottom-footer-list, .footer-nav-wrap, .footer-nav-list, .footer-container, .contacts-container, .counter, .tickets-form, .tickets-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1440px;
@@ -480,9 +486,6 @@ h1, h2, h3 {
 }
 
 .tickets-flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   column-gap: 60px;
 }
 
@@ -495,9 +498,6 @@ h1, h2, h3 {
 }
 
 .tickets-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: 60%;
 }
 
@@ -533,9 +533,6 @@ h1, h2, h3 {
 .counter {
   width: 150px;
   height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   border-style: solid;
   border-color: var(--bg-dark);
@@ -623,9 +620,6 @@ h1, h2, h3 {
 
 .footer-container {
   padding-bottom: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .footer-logo {
@@ -645,8 +639,6 @@ h1, h2, h3 {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 47%;
   flex-wrap: wrap;
@@ -659,11 +651,8 @@ h1, h2, h3 {
 }
 
 .footer-nav-wrap {
-  display: flex;
-  flex-direction: row;
   align-items: flex-end;
   width: 76%;
-  justify-content: space-between;
   padding-top: 10px;
 }
 
@@ -696,9 +685,6 @@ h1, h2, h3 {
 }
 
 .bottom-footer-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin: 0;
   padding-left: 0;
   padding-top: 50px;
@@ -843,12 +829,6 @@ h1, h2, h3 {
   margin-left: 10px;
   margin-bottom: 6px;
   color: #9d8665;
-}
-
-.wrap-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .wrap-start {
@@ -1168,20 +1148,7 @@ h1, h2, h3 {
 }
 
 .flex-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   column-gap: 60px;
-}
-
-.gold {
-  color: var(--font-gold);
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .section-header_video {
@@ -1232,10 +1199,19 @@ h1, h2, h3 {
 }
 .pagination-button:hover {
   background-color: var(--font-gold);
+  cursor: pointer;
 }
 
 .pagination-button.active {
   color: #333333;
+}
+
+.stroke-button {
+  background-color: white;
+  border: transparent;
+}
+.stroke-button:hover {
+  cursor: pointer;
 }
 
 .style-icon {

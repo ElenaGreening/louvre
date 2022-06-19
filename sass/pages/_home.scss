@@ -34,30 +34,10 @@
   }
 }
 
-
-
-
 .flex-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @extend %flex-row;
   column-gap: 60px;
 }
-
-
-
-.gold {
-  color: var(--font-gold)
-}
-
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-
 
 
 

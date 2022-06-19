@@ -9,9 +9,8 @@ background-color: $color-background-dark;
 }
 .footer-container{
   padding-bottom: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @extend %flex-row;
+
 }
 .footer-logo {
   width: 195px;
@@ -30,8 +29,7 @@ background-color: $color-background-dark;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
+  @extend %flex-row;
   align-items: center;
   width: 47%;
   flex-wrap: wrap;
@@ -43,11 +41,9 @@ background-color: $color-background-dark;
 }
 
 .footer-nav-wrap{
-  display: flex;
-  flex-direction: row;
+  @extend %flex-row;
   align-items: flex-end;
   width: 76%;
-  justify-content: space-between;
   padding-top: 10px;
 }
 
@@ -83,20 +79,8 @@ background-color: $color-background-dark;
   }
 
 
-
-
-//.nav-element-footer {
-//  //color: #FFFFFF;
-//  //letter-spacing: 2px;
-//  //list-style: none;
-//  //padding-left: 20px;
-//  //padding-right: 20px;
-//}
-
 .bottom-footer-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @extend %flex-row;
   margin: 0;
   padding-left: 0;
   padding-top: 50px;

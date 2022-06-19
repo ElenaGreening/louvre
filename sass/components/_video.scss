@@ -47,9 +47,18 @@
   border-color: transparent;
   &:hover {
     background-color: var(--font-gold);
+    cursor: pointer;
   }
 }
 
 .pagination-button.active{
   color: #333333;
+}
+
+.stroke-button {
+  background-color: white;
+  border: transparent;
+  &:hover{
+    cursor: pointer;
+  }
 }

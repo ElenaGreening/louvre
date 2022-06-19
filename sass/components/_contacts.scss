@@ -4,6 +4,7 @@
 
 
 .contacts-container{
+  @extend %flex-row;
   padding-top: 80px;
 }
 
