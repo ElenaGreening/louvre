@@ -47,13 +47,15 @@
   width: 16px;
   height: 16px;
   &:hover {
-    background-color: var(--font-gold);
+    background-color: $color-gold-header;
+
+
   }
 }
 
 
 .slider-button.active {
-  background-color: #7E6C51;
+  background-color: #7e6c51;
 }
 
 

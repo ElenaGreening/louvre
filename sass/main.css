@@ -133,6 +133,7 @@ h1, h2, h3 {
 .buy-button:hover {
   background-color: var(--font-gold);
   border-color: #9d8665;
+  cursor: pointer;
 }
 .buy-button:active {
   background-color: #7E6C51;
@@ -547,6 +548,7 @@ h1, h2, h3 {
   line-height: 5px;
   text-align: center;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .counter-input {
@@ -556,6 +558,7 @@ h1, h2, h3 {
   text-align: center;
   font-weight: 300;
   line-height: 26px;
+  cursor: pointer;
 }
 
 .tickets-total {
@@ -804,12 +807,12 @@ h1, h2, h3 {
   border-width: 1px;
   width: 400px;
   height: 45px;
-  /*margin-top: 10px;*/
+  padding-left: 10px;
   margin-bottom: 10px;
 }
 
 .input-div-short {
-  width: 190px;
+  width: 50%;
 }
 
 .input-div-short-margin10 {
@@ -1077,11 +1080,11 @@ h1, h2, h3 {
   height: 16px;
 }
 .slider-button:hover {
-  background-color: var(--font-gold);
+  background-color: #9d8665;
 }
 
 .slider-button.active {
-  background-color: #7E6C51;
+  background-color: #7e6c51;
 }
 
 .slider-arrow {
