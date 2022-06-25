@@ -30,7 +30,7 @@
   text-decoration: none;
   color: #FFFFFF;
   &:hover {
-    color: var(--font-gold);
+    color: $color-gold-header;
     @extend %transition;}
 
   &:active {

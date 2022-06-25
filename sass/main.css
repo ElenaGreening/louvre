@@ -169,7 +169,7 @@ h1, h2, h3 {
   color: #FFFFFF;
 }
 .anchor-link:hover {
-  color: var(--font-gold);
+  color: #9d8665;
 }
 .anchor-link:active {
   color: #7E6C51;
@@ -320,7 +320,7 @@ h1, h2, h3 {
   width: 600px;
   position: absolute;
   z-index: 2;
-  bottom: 140px;
+  top: -60px;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   color: #FFFFFF;
@@ -1048,7 +1048,7 @@ h1, h2, h3 {
   justify-content: center;
   z-index: 2;
   position: absolute;
-  top: 690px;
+  bottom: -60px;
 }
 
 .arrow-wrapper {
