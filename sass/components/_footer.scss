@@ -32,7 +32,6 @@ background-color: $color-background-dark;
   @extend %flex-row;
   align-items: center;
   width: 47%;
-  flex-wrap: wrap;
 }
 .footer-nav-list-div{
   display: flex;

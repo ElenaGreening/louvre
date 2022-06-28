@@ -1,0 +1,30 @@
+.navigation{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  column-gap: 55px;
+}
+
+.header__navigation{
+  @include media-laptop-small{
+    display: none;
+  }
+}
+
+.navigation__element {
+  letter-spacing: 2px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.anchor-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  &:hover {
+    color: $color-gold-header;
+    @extend %transition;}
+
+  &:active {
+    color: #7E6C51;
+  }
+}

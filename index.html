@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>museum</title>
-    <link rel="icon" href="assets/svg/Vector.svg">
+    <link rel="icon" href="assets/svg/vector.svg">
     <link rel="stylesheet" href="sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,22 @@
 <body class="body">
 <header class="header">
     <div class="wrapper header__wrapper">
-        <img src="assets/svg/Logo.svg" alt="logo">
+        <img class="logo" src="assets/svg/logo.svg" alt="logo">
+        <div class="hamburger">
+            <!--        <input id="menu__toggle" type="checkbox" />-->
+            <!--        <label class="menu__btn" for="menu__toggle">-->
+            <!--            <span></span>-->
+            <!--        </label>-->
+            <span class="hamburger__line"></span>
+            <!--        <ul class="hamburger-navigation">-->
+            <!--            <li class="hamburger-nav-element"><a class="anchor-link" href="#visiting">Visiting</a></li>-->
+            <!--            <li class="hamburger-nav-element"><a class="anchor-link" href="#explore">Explore</a></li>-->
+            <!--            <li class="hamburger-nav-element"><a class="anchor-link" href="#video">Video</a></li>-->
+            <!--            <li class="hamburger-nav-element"><a class="anchor-link" href="#gallery">Gallery</a></li>-->
+            <!--            <li class="hamburger-nav-element"><a class="anchor-link" href="#tickets">Tickets</a></li>-->
+            <!--            <li class="hamburger-nav-element"><a class="anchor-link" href="#contacts">Contacts</a></li>-->
+            <!--        </ul>-->
+        </div>
         <nav class="header__navigation">
             <ul class="navigation">
                 <li class="navigation__element"><a class="anchor-link" href="#visiting">Visiting</a></li>
@@ -31,20 +46,6 @@
                 <li class="navigation__element"><a class="anchor-link" href="#contacts">Contacts</a></li>
             </ul>
         </nav>
-    </div>
-    <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-            <span></span>
-        </label>
-        <ul class="hamburger-navigation">
-            <li class="hamburger-nav-element"><a class="anchor-link" href="#visiting">Visiting</a></li>
-            <li class="hamburger-nav-element"><a class="anchor-link" href="#explore">Explore</a></li>
-            <li class="hamburger-nav-element"><a class="anchor-link" href="#video">Video</a></li>
-            <li class="hamburger-nav-element"><a class="anchor-link" href="#gallery">Gallery</a></li>
-            <li class="hamburger-nav-element"><a class="anchor-link" href="#tickets">Tickets</a></li>
-            <li class="hamburger-nav-element"><a class="anchor-link" href="#contacts">Contacts</a></li>
-        </ul>
     </div>
 </header>
 <main class="main">
@@ -73,7 +74,7 @@
                     <li class="slider-list__item"><button class="slider-button"></button></li>
                 </ul>
                 <div class="arrow-wrapper">
-                    <button class="slider-arrow" id="prev"><img src="assets/svg/arrowLeft.svg" alt="arrow left"></button>
+                    <button class="slider-arrow" id="prev"><img src="assets/svg/arrow-left.svg" alt="arrow left"></button>
                     <button class="slider-arrow" id="next"><img src="assets/svg/arrow.svg" alt="arrow right"></button>
                 </div>
             </div>
@@ -161,13 +162,13 @@
                     <img src="assets/img/VideoSlideItem3.png" alt="promenade">
                 </div>
                 <ul class="slider-list slider-list_video ">
-                    <button class="stroke-button" id="left"><img src="assets/svg/Stroke.svg" alt="arrow left"></button>
+                    <button class="stroke-button" id="left"><img src="assets/svg/stroke.svg" alt="arrow left"></button>
                     <li class="slider-list__item"><div class="pagination-button"></div></li>
                     <li class="slider-list__item"><div class="pagination-button"></div></li>
                     <li class="slider-list__item"><div class="pagination-button"></div></li>
                     <li class="slider-list__item"><div class="pagination-button"></div></li>
                     <li class="slider-list__item"><div class="pagination-button"></div></li>
-                    <button class="stroke-button" id="right"><img src="assets/svg/Stroke-right.svg" alt="arrow right"></button>
+                    <button class="stroke-button" id="right"><img src="assets/svg/stroke-right.svg" alt="arrow right"></button>
                 </ul>
             </div>
         </div>
@@ -185,8 +186,8 @@
         <div class="blur">
         <div class="book-ticket-popup">
             <div class="booking-tickets-wrap">
-                <img class="gold-logo" src="assets/svg/GOLDENlogo.svg" alt="logo">
-                <img class="close-popup" src="assets/svg/Close.svg" alt="close popup button">
+                <img class="gold-logo" src="assets/svg/golden-logo.svg" alt="logo">
+                <img class="close-popup" src="assets/svg/close.svg" alt="close popup button">
                 <h2 class="booking-header">Booking tickets</h2>
                 <p class="booking-par red-border">Tour to Louvre</p>
                 <form  class="ticket-popup-form" name="ticket-info" method="POST">
@@ -244,7 +245,7 @@
                 <div class="wrap-row">
                     <div>
                         <h2 class="overview-header">Overview</h2>
-                        <p class="font-weight-500 font-red">Tour to Louvre</p>
+                        <p class="font-red">Tour to Louvre</p>
                         <p><span class="icon-date"></span><span class="overview__info">Friday, August 19</span></p>
                         <p><span class="icon-time"></span><span class="overview__info">16.30</span></p>
                         <p><span class="icon-check"></span><span class="overview__info">Temporary exhibition</span></p>
@@ -253,12 +254,12 @@
                 </div>
                 <div class="red-border">
                     <div class="wrap-row">
-                        <p class="overview-par  font-weight-400">Basic (20 €)</p>
-                        <p class="overview-par  font-weight-400">40 €</p>
+                        <p class="overview-par">Basic (20 €)</p>
+                        <p class="overview-par">40 €</p>
                     </div>
                     <div class="wrap-row">
-                        <p class="overview-par  font-weight-400">Senior (10 €)</p>
-                        <p class="overview-par  font-weight-400">20 €</p>
+                        <p class="overview-par">Senior (10 €)</p>
+                        <p class="overview-par">20 €</p>
                     </div>
                 </div>
                 <div>
@@ -269,8 +270,8 @@
                     <div>
                         <div class="card1 ">
                             <div class="card1-logo">
-                                <img src="assets/svg/Visa.svg" alt="visa">
-                                <img src="assets/svg/Mastercard.svg" alt="masterCard">
+                                <img src="assets/svg/visa.svg" alt="visa">
+                                <img src="assets/svg/mastercard.svg" alt="masterCard">
                             </div>
                             <div class="wrap-column">
                             <label class="card1-label roboto-normal12" for="cardNumber">Card number</label>
