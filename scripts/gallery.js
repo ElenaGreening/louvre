@@ -19,10 +19,7 @@ let pictures = [
     "assets/img/gallery/galery14.jpeg",
     "assets/img/gallery/galery15.jpeg",]
 
-
- console.log(pictures)
 shuffle(pictures)
-console.log(pictures)
 
 let pictureCont = document.querySelector('.gallery-picture-inner-cont')
 function makeGallery () {
@@ -34,6 +31,5 @@ function makeGallery () {
         pictureCont.append(img);
     }
 }
-
 
 makeGallery()

@@ -6,6 +6,9 @@
 .contacts-container{
   @extend %flex-row;
   padding-top: 80px;
+  @include media-mobile{
+    flex-direction: column;
+  }
 }
 
 .contacts-header{

@@ -1,4 +1,3 @@
-
 .main {
   margin: 0 auto;
   width: 100%;
@@ -15,16 +14,19 @@
   @include media-laptop-small{
     @include font(5rem,7.5rem, normal, 0.5rem );
   }
+  @include media-laptop-small{
+   padding-bottom: 20px;
+  }
 }
 
 
 .section {
   padding-top: 75px;
   padding-bottom: 75px;
-}
-
-.white-header {
-  color: #ffffff;
+  @include media-laptop-small{
+    padding-top: 57px;
+    padding-bottom: 63px;
+  }
 }
 
 
@@ -37,11 +39,6 @@
     width: 100%;
    @extend %transition
   }
-}
-
-.flex-row {
-  @extend %flex-row;
-  column-gap: 60px;
 }
 
 

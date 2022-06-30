@@ -7,7 +7,7 @@
   width: 100%;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
-  @include font(2.2rem, 2.6rem, 200)
+  @include font(2.2rem, 2.6rem, 0, 200)
 }
 
 
@@ -34,8 +34,11 @@ h2{
 h3 {
   @extend %font-add;
   @include font(3.2rem, 3.5rem, 0.5rem);
+  @include media-laptop-small {
+    @include font(2.3rem, 3rem, 0.3rem)
+  }
 }
 
 h4{
-  @include font(2.8rem, 3.3rem, 0, 500)
+  @include font(2.8rem, 3.3rem, 0, 500);
 }

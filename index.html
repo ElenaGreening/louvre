@@ -131,7 +131,7 @@
         </div>
     </section>
     <section class="section explore-section" id="explore">
-        <div class="wrapper flex-row">
+        <div class="wrapper wrapper-explore">
             <div class="explore-container">
             <h2 class="section-header section-header-explore">Picture explore</h2>
                 <div class="explore-info-wrap">
@@ -149,19 +149,30 @@
             <h2 class="section-header section-header_video">Video journey</h2>
                 <p class="video-journey-paragraph">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
             </div>
-            <div class="video-player">
-                <div class="video-container">
-                    <div>
-                        <img src="assets/img/video.png" alt="video Louvre">
-                    </div>
-                    <div></div>
-                </div>
-                <div class="video-slider-container">
-                    <img src="assets/img/VideoSlideItem.png" alt="video exposition">
-                    <img src="assets/img/VideoSlideItem2.png" alt="Venus de Milo">
-                    <img src="assets/img/VideoSlideItem3.png" alt="promenade">
-                </div>
-                <ul class="slider-list slider-list_video ">
+            <div class="video-player-container">
+                    <ul class="video-slider-container">
+                        <li class="video active"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/zp1BXPX8jcU"
+                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li class="video">
+                            <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Vi5D6FKhRmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li class="video">
+                            <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                    </ul>
+                <ul class="videos">
+                    <li><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/zp1BXPX8jcU"
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Vi5D6FKhRmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                </ul>
+                <ul class="video-pagination">
                     <button class="stroke-button" id="left"><img src="assets/svg/stroke.svg" alt="arrow left"></button>
                     <li class="slider-list__item"><div class="pagination-button"></div></li>
                     <li class="slider-list__item"><div class="pagination-button"></div></li>
@@ -175,7 +186,7 @@
     </section>
     <section class="gallery-section" id="gallery">
         <div class="wrapper">
-            <h2 class="section-header white-header">Art gallery</h2>
+            <h2 class="section-header gallery-header">Art gallery</h2>
             <div class="gallery-picture-container">
                 <div class="gallery-picture-inner-cont">
                 </div>
@@ -407,6 +418,7 @@
         </ul>
     </div>
 </footer>
+<script src="scripts/video-player.js"></script>
 <script src="scripts/tickets.js"></script>
 <script src="scripts/popup.js"></script>
 <script src="scripts/slider.js"></script>

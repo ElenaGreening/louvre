@@ -1,7 +1,10 @@
 .welcome-section{
   width: 100%;
-  padding-bottom: 60px;
+  padding-bottom: 55px;
 background-color: $color-background-dark;
+  @include media-tablet{
+    padding-bottom: 0;
+  }
 }
 
 .welcome-header {
@@ -13,6 +16,16 @@ background-color: $color-background-dark;
   letter-spacing: 0.5rem;
   color: #FFFFFF;
   margin-top: 0;
+
+  @include media-laptop-small{
+    width: 398px;
+  }
+  @include media-tablet{
+    position: static;
+    z-index: 0;
+    text-align: center;
+    margin-bottom: 0;
+  }
 }
 
 .container-welcome {
@@ -20,6 +33,10 @@ background-color: $color-background-dark;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  @include media-tablet{
+    flex-direction: column;
+  }
 }
 
 .section-paragraph {
@@ -31,6 +48,20 @@ background-color: $color-background-dark;
   font-weight: 300;
   letter-spacing: 2px;
   width: 101%;
+  @include media-laptop-small {
+    @include font(2.4rem, 2.8rem, 0.2rem, 300);
+    white-space: nowrap;
+  }
+  @include media-tablet{
+    padding-top: 25px;
+    padding-bottom: 50px;
+    @include font(2rem, 2.4rem, 0.2rem, 300);
+    text-align: center;
+  }
+  @include media-mobile{
+    @include font(1.6rem, 1.9rem, 0.2rem, 300);
+  }
+
 }
 
 .welcome-info-container {

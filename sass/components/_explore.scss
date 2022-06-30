@@ -6,7 +6,7 @@
 .section-header-explore {
   border-bottom-style: solid;
   border-bottom-color: var(--dark-red);
-  width: 660px;
+  width: 100%;
   color: #FFFFFF;
   padding-bottom: 25px;
 }
@@ -16,6 +16,20 @@
   height: 715px;
   margin: 0;
   padding-top: 15px;
+  @include media-mobile{
+    width: 380px;
+    height: 368px;
+  }
+
+}
+
+.wrapper-explore {
+  @extend %flex-row;
+  column-gap: 60px;
+
+  @include media-laptop-small{
+  flex-direction: column;
+  }
 
 }
 
@@ -29,6 +43,9 @@
   display: flex;
   flex-direction: column;
   row-gap: 27px;
+  @include media-laptop-small{
+    display: none;
+  }
 }
 
 
@@ -41,3 +58,4 @@
     color: $color-text-highlight;
   }
 }
+

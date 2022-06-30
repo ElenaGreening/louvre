@@ -1,5 +1,4 @@
 .welcome-section-button {
-  position: relative;
   display: flex;
   width: 360px;
   height: 75px;
@@ -14,6 +13,14 @@
   @extend %transition;
   &:hover {
     background-color: var(--font-gold);
+  }
+  @include media-laptop-small{
+    width: 300px;
+    @include font(2rem, 2.4rem)
+  }
+
+  @include media-tablet{
+    display: none;
   }
 }
 

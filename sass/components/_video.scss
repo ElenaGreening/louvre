@@ -20,7 +20,7 @@
   align-items: center;
   column-gap: 60px;
 }
-.video-player {
+.video-player-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,8 +34,15 @@
   column-gap: 42px;
   padding-top: 80px;
 }
+.videos{
+  display: flex;
+  flex-direction: row;
+}
 
-.slider-list_video {
+.video-pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   column-gap: 20px;
 }
 
