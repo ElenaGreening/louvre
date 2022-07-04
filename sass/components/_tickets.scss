@@ -7,13 +7,16 @@
   row-gap: 73px;
 }
 .tickets-container-img {
-  width: 720px;
-  height: 550px;
+  width: 70%;
+  height: 100%;
 }
 
 .tickets-flex-container {
   @extend %flex-row;
   column-gap: 60px;
+  @include media-tablet{
+    column-gap: 45px;
+  }
   @include media-mobile{
     flex-direction: column;
   }
@@ -43,9 +46,10 @@ margin-bottom: 24px;
   width: 60%;
   border-color: transparent;
   padding: 0;
-  @include media-laptop-small{
+  @media (max-width: 1120px) {
     display: none;
   }
+
 }
 .ticket-info_type{
   margin: 0;

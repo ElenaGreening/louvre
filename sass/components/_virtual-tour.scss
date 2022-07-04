@@ -23,6 +23,9 @@
     padding-top: 60px;
     column-gap: 108px;
   }
+  @include media-tablet{
+    column-gap: 56px;
+  }
 
 
 }
@@ -30,23 +33,22 @@
 .virtual-tour-card {
   display: block;
   text-decoration: none;
-
-  width: calc(33.3% - 120px);
+  //width: calc(33.3% - 120px);
   height: 100%;
   @include media-laptop-small {
     width: calc(50% - 162px)
   }
   @include media-tablet{
-    width: calc(50% - 327px);
+    width: calc(50% - 56px);
   }
   @include media-mobile{
-    width: calc(100% - 100px)
+    width: calc(100% - 100px);
   }
 
   &:hover{
     .card-red-line{
       width: 100%;
-      @extend %transition
+      @extend %transition;
     }
   }
 }

@@ -29,6 +29,16 @@ h1{
 h2{
   @extend %font-add;
   @include font(8rem, 9rem, 0.5rem);
+  @include media-laptop-small {
+    @include font(5rem, 7.5rem)
+  }
+
+  @include media-tablet{
+    @include font(4rem, 6rem)
+  }
+  @include media-mobile{
+    @include font(2.8rem, 4rem)
+  }
 }
 
 h3 {
@@ -36,6 +46,12 @@ h3 {
   @include font(3.2rem, 3.5rem, 0.5rem);
   @include media-laptop-small {
     @include font(2.3rem, 3rem, 0.3rem)
+  }
+  @include media-tablet{
+    @include font(2.2rem, 2.4rem)
+  }
+  @include media-mobile{
+    @include font(1.8rem, 2rem, 0.5rem)
   }
 }
 

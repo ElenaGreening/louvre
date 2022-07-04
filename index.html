@@ -137,10 +137,13 @@
                 <div class="explore-info-wrap">
                 <p class="explore__info">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
                 <p class="explore__info">It was cleaned in 1984 to remove a <span class="explore__info_gold">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
-                <p class="explore__info">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
+                <p class="explore__info display-none">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
                 </div>
                 </div>
-            <img class="explore-img" src="assets/img/pictureExplore.png" alt="picture explore">
+            <div class="explore-slider">
+                <img class="explore-img-old" src="assets/img/explore-slider/before.jpg" alt="picture explore">
+                <img class="explore-img-new" src="assets/img/explore-slider/after.jpg" alt="picture explore new">
+            </div>
         </div>
     </section>
     <section class="section video-section" id="video">
@@ -151,25 +154,77 @@
             </div>
             <div class="video-player-container">
                     <ul class="video-slider-container">
-                        <li class="video active"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/zp1BXPX8jcU"
+                        <li class="video-slide active">
+                            <iframe width="560" height="315" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+    html,body{height:100%}
+    img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+    span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}
+    </style>
+    <a href=https://www.youtube.com/embed/zp1BXPX8jcU?autoplay=1>
+    <img class='img-video' src=assets/video/video-posters/poster0.jpg alt='Demo video'>
+    <span>▶</span>
+    </a>" src="https://www.youtube.com/embed/zp1BXPX8jcU?autoplay=1"
                                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </li>
-                        <li class="video">
-                            <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Vi5D6FKhRmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <li class="video-slide">
+                            <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Vi5D6FKhRmo" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+    html,body{height:100%}
+    img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+    span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}
+    </style>
+    <a href=https://www.youtube.com/embed/Vi5D6FKhRmo?autoplay=1>
+    <img class='img-video' src=assets/video/video-posters/poster1.jpg alt='Demo video'>
+    <span>▶</span>
+    </a>"
+                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </li>
-                        <li class="video">
-                            <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <li class="video-slide">
+                            <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/NOhDysLnTvY" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+    html,body{height:100%}
+    img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+    span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}
+    </style>
+    <a href=https://www.youtube.com/embed/Vi5D6FKhRmo?autoplay=1>
+    <img class='img-video' src=assets/video/video-posters/poster2.jpg alt='Demo video'>
+    <span>▶</span>
+    </a>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </li>
                     </ul>
                 <ul class="videos">
-                    <li><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/zp1BXPX8jcU"
+                    <li class="video-button"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/zp1BXPX8jcU"
+                                                     srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+    html,body{height:100%}
+    img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+    span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}
+    </style>
+    <a href=https://www.youtube.com/embed/zp1BXPX8jcU?autoplay=1>
+    <img class='img-video' src=assets/video/video-posters/poster0.jpg alt='Demo video'>
+    <span>▶</span>
+    </a>"
                                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </li>
-                    <li>
-                        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Vi5D6FKhRmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <li class="video-button">
+                        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Vi5D6FKhRmo" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+    html,body{height:100%}
+    img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+    span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}
+    </style>
+    <a href=https://www.youtube.com/embed/Vi5D6FKhRmo?autoplay=1>
+    <img class='img-video' src=assets/video/video-posters/poster1.jpg alt='Demo video'>
+    <span>▶</span>
+    </a>"выы title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </li>
-                    <li>
-                        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <li  class="video-button hidden">
+                        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/NOhDysLnTvY"
+                                srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+    html,body{height:100%}
+    img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+    span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}
+    </style>
+    <a href=https://www.youtube.com/embed/Vi5D6FKhRmo?autoplay=1>
+    <img class='img-video' src=assets/video/video-posters/poster2.jpg alt='Demo video'>
+    <span>▶</span>
+    </a>"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </li>
                 </ul>
                 <ul class="video-pagination">
@@ -355,7 +410,7 @@
                 <p class="contacts__info"><a class="phone-mail-Link" href="tel:+33(0)140205050">phone: +33(0) 1 40 20 50 50</a></p>
                 <p class="contacts__info"><a class="phone-mail-Link" href="mailto:info@louvre.fr">mail:info@louvre.fr</a></p>
             </div>
-            <img src="assets/img/map.png" alt="map">
+            <img class="map" src="assets/img/map.png" alt="map">
         </div>
         </div>
     </section>

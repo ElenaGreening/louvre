@@ -11,9 +11,9 @@
   color: $color-gold-header;
   margin: 0;
   padding-bottom: 25px;
-  @include media-laptop-small{
-    @include font(5rem,7.5rem, normal, 0.5rem );
-  }
+  //@include media-laptop-small{
+  //  @include font(5rem,7.5rem, normal, 0.5rem );
+  //}
   @include media-laptop-small{
    padding-bottom: 20px;
   }
