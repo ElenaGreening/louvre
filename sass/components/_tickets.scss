@@ -2,16 +2,24 @@
   width: 100%;
 }
 .tickets-wrapper{
-  display: flex;
-  flex-direction: column;
-  row-gap: 73px;
+}
+.tickets-header {
+  margin-bottom: 73px;
+  @include media-tablet{
+    margin-bottom: 40px;
+  }
 }
 .tickets-container-img {
   width: 70%;
   height: 100%;
+  @include media-mobile{
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .tickets-flex-container {
+  padding-top: 40px;
   @extend %flex-row;
   column-gap: 60px;
   @include media-tablet{
@@ -40,6 +48,10 @@ margin-bottom: 24px;
 .tickets-form {
   @extend %flex-row;
   width: 60%;
+  @include media-mobile{
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .tickets-form-type {
@@ -52,18 +64,25 @@ margin-bottom: 24px;
 
 }
 .ticket-info_type{
-  margin: 0;
-  margin-bottom: 50px;
+  margin: 0 0 50px 0;
   font-weight: 700;
 }
 .ticket-info_amount{
-  margin: 0;
-  margin-bottom: 15px;
+  margin: 0 0 25px 0;
   font-weight: 700;
+  @include media-mobile{
+    @include font(1.6rem, 1.9rem)
+  }
+
+
 }
 
 .age-type {
-  margin: 10px 0 15px 0;
+  margin: 0 0 15px 0;
+
+  @include media-mobile{
+    @include font(1.6rem, 1.9rem, 0, 300)
+  }
 }
 
 .tickets-form-amount {
@@ -75,12 +94,19 @@ margin-bottom: 24px;
 .counter {
   width: 150px;
   height: 50px;
+  margin-bottom: 10px;
   @extend %flex-row;
   align-items: center;
   border-style: solid;
   border-color: var(--bg-dark);
   border-width: 3px;
+  @include media-laptop-small{
+    width: 175px;
+  }
+}
 
+.extra-margin{
+  margin-bottom: 45px;
 }
 
 .counter-button {
@@ -104,11 +130,15 @@ margin-bottom: 24px;
   cursor: pointer;
 }
 .tickets-total {
-  font-size: 2.8rem;
-  font-weight: bold;
-  margin-top: 55px;
+  margin-top: 0;
   margin-bottom: 60px;
-  letter-spacing: 2.8px;
+  &{
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+  }
+  @include media-mobile{
+    @include font(1.6rem, 1.9rem)
+  }
 }
 
 .section-buy-tickets-img {

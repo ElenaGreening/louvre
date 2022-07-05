@@ -15,6 +15,10 @@
   row-gap: 75px;
   column-gap: 60px;
   padding-top: 76px;
+  >*{
+    flex-basis: content;
+    flex-grow: 0;
+  }
   @include media-laptop{
     justify-content: center;
     //column-gap: 109px;
@@ -35,15 +39,15 @@
   text-decoration: none;
   //width: calc(33.3% - 120px);
   height: 100%;
-  @include media-laptop-small {
-    width: calc(50% - 162px)
-  }
-  @include media-tablet{
-    width: calc(50% - 56px);
-  }
-  @include media-mobile{
-    width: calc(100% - 100px);
-  }
+  //@include media-laptop-small {
+  //  width: calc(50% - 162px)
+  //}
+  //@include media-tablet{
+  //  width: calc(50% - 56px);
+  //}
+  //@include media-mobile{
+  //  width: calc(100% - 100px);
+  //}
 
   &:hover{
     .card-red-line{
