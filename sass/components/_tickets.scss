@@ -19,14 +19,15 @@
 }
 
 .tickets-flex-container {
-  padding-top: 40px;
+  padding-top: 55px;
   @extend %flex-row;
   column-gap: 60px;
   @include media-tablet{
     column-gap: 45px;
+    flex-direction: column;
+    align-items: center;
   }
   @include media-mobile{
-    flex-direction: column;
   }
 }
 .ticket-choice{
@@ -48,7 +49,7 @@ margin-bottom: 24px;
 .tickets-form {
   @extend %flex-row;
   width: 60%;
-  @include media-mobile{
+  @include media-tablet{
     justify-content: center;
     width: 100%;
   }
