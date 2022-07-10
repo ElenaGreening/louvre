@@ -1,11 +1,6 @@
 .video-section{
 }
 
-.hidden{
-  @include media-tablet{
-    display: none;
-  }
-}
 .section-header_video{
   width: 78%;
   padding-bottom: 0;
