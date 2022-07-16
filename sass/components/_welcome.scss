@@ -26,6 +26,9 @@ background-color: $color-background-dark;
     text-align: center;
     margin-bottom: 0;
   }
+  @include media-mobile{
+    max-width: 100%;
+  }
 }
 
 .container-welcome {
@@ -66,4 +69,5 @@ background-color: $color-background-dark;
 
 .welcome-info-container {
   position: relative;
+  max-width: 100%;
 }
