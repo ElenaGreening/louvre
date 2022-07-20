@@ -10,6 +10,10 @@
   @include font(2.2rem, 2.6rem, 0, 200)
 }
 
+.body._lock{
+  overflow:hidden;
+}
+
 
 
 h1{
