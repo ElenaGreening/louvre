@@ -29,6 +29,10 @@ section, header, footer, main, article {
   font-style: normal;
 }
 
+.body._lock {
+  overflow: hidden;
+}
+
 h1 {
   font-size: 8rem;
   line-height: 9rem;
@@ -317,7 +321,7 @@ h1, h2, h3 {
   }
 }
 
-.hamburger__line, .hamburger:after, .hamburger:before {
+.hamburger__line, .hamburger._active:after, .hamburger._active:before, .hamburger:after, .hamburger:before {
   position: absolute;
   content: "";
   display: inline-block;
@@ -327,14 +331,16 @@ h1, h2, h3 {
 }
 
 .hamburger {
-  position: relative;
   display: none;
+  position: relative;
   width: 32px;
   height: 18px;
+  z-index: 3;
 }
 @media (max-width: 1024px) {
   .hamburger {
     display: inline-block;
+    transition: 0.3s;
   }
 }
 .hamburger:before {
@@ -345,10 +351,123 @@ h1, h2, h3 {
   bottom: 0;
   left: 0;
 }
+.hamburger._active:before {
+  top: 0;
+  transform: rotate(-45deg) translate(0px, -50%);
+  transition: 1s;
+}
+.hamburger._active:after {
+  bottom: 100%;
+  transform: rotate(45deg) translate(0px, 50%);
+  transition: 1s;
+}
+
+.wrap-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 2;
+}
+.wrap-overlay._active {
+  display: block;
+}
+
+.hamburger-navigation {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  width: 50%;
+  margin-bottom: 35px;
+  margin-top: 0;
+  padding-left: 0;
+}
+@media (max-width: 786px) {
+  .hamburger-navigation {
+    width: 20%;
+  }
+}
+@media (max-width: 420px) {
+  .hamburger-navigation {
+    width: 45%;
+  }
+}
+
+.hamburger-menu-wrapper {
+  visibility: hidden;
+  position: fixed;
+  background-color: #030303;
+  top: 126px;
+  left: -100%;
+  width: 412px;
+  height: 100%;
+  margin: 0;
+  padding: 35px 55px 0 55px;
+  list-style: none;
+  transition: 0.5s;
+  z-index: 3;
+}
+@media (max-width: 786px) {
+  .hamburger-menu-wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .hamburger-menu-wrapper {
+    top: 85px;
+  }
+}
+@media (max-width: 1024px) {
+  .hamburger-menu-wrapper._active {
+    visibility: visible;
+    left: 0;
+  }
+}
 
 .hamburger__line {
   top: calc(50% - 1px);
   left: 0;
+}
+.hamburger__line._active {
+  transform: rotate(45deg) translate(-7px, -6px);
+  transition: 1s;
+}
+
+.anchor-link_burger {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburger-menu-pictures {
+  display: none;
+}
+@media (max-width: 786px) {
+  .hamburger-menu-pictures {
+    display: block;
+  }
+}
+
+.menu-img_big {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.menu-img_small {
+  width: calc(50% - 13px);
+}
+
+.menu-img_small_margin {
+  margin-right: 20px;
+}
+
+@media (max-width: 420px) {
+  .menu-img {
+    width: calc(33% - 12px);
+    margin: 0;
+  }
 }
 
 .welcome-section {
@@ -365,7 +484,7 @@ h1, h2, h3 {
 .welcome-header {
   width: 600px;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   top: -60px;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -723,13 +842,13 @@ h1, h2, h3 {
 }
 @media (max-width: 1024px) {
   .tickets-img-container {
-    width: 100%;
+    max-width: 100%;
     background-position: center;
   }
 }
 @media (max-width: 420px) {
   .tickets-img-container {
-    width: 100%;
+    max-width: 100%;
     height: 160px;
     overflow-y: hidden;
     background-size: cover;
@@ -1501,7 +1620,7 @@ h1, h2, h3 {
   align-items: center;
   column-gap: 55px;
   justify-content: center;
-  z-index: 2;
+  z-index: 1;
   position: absolute;
   bottom: -55px;
 }
@@ -1568,6 +1687,10 @@ h1, h2, h3 {
   width: 16px;
   height: 16px;
 }
+.slider-button._active {
+  background-color: #7e6c51;
+  display: inline-block;
+}
 .slider-button:hover {
   background-color: #9d8665;
 }
@@ -1576,11 +1699,6 @@ h1, h2, h3 {
     width: 7px;
     height: 7px;
   }
-}
-
-.slider-button.active {
-  background-color: #7e6c51;
-  display: inline-block;
 }
 
 .slider-arrow {
@@ -1602,8 +1720,7 @@ h1, h2, h3 {
   height: 100%;
   display: none;
 }
-
-.welcome-slider-img.active {
+.welcome-slider-img._active {
   display: block;
 }
 
