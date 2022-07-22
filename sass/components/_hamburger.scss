@@ -48,6 +48,7 @@
 
 
     .wrap-overlay{
+      display: none;
       position: absolute;
       top: 0;
       right: 0;
@@ -55,6 +56,9 @@
       height: 100%;
       background-color: transparent;
       z-index: 2;
+      &._active{
+        display: block;
+      }
     }
 
     .hamburger-navigation{
@@ -88,6 +92,9 @@
       z-index: 3;
       @include media-tablet{
         width: 100%;
+      }
+      @include media-mobile{
+        top: 85px;
       }
       &._active{
         @include media-laptop-small{

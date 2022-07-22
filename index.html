@@ -7,9 +7,6 @@
     <title>museum</title>
     <link rel="icon" href="assets/svg/vector.svg">
     <link rel="stylesheet" href="sass/main.css">
-<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
-<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
-<!--    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 </head>
@@ -32,9 +29,17 @@
                         <li class="navigation__element"><a class="anchor-link anchor-link_burger" href="#contacts">Contacts <img src="assets/svg/arrow-menu.svg" alt="arrow"></a></li>
                     </ul>
                     <div class="hamburger-menu-pictures">
-                        <img class="menu-img menu-img_big" src="assets/img/burger-menu/image1.jpg" alt="picture of Louvre">
-                        <img class="menu-img menu-img_small menu-img_small_margin" src="assets/img/burger-menu/image2.jpg" alt="picture of Louvre">
-                        <img class="menu-img menu-img_small" src="assets/img/burger-menu/image3.jpg" alt="picture of Louvre">
+                        <picture>
+<!--                            <source srcset="assets/img/burger-menu/image4.jpg">-->
+<!--                            <source media="max-width: 420px" srcset="assets/img/burger-menu/image1.jpg">-->
+                            <img class="menu-img menu-img_big" src="assets/img/burger-menu/image1.jpg" alt="picture of Louvre">
+                        </picture>
+                        <picture>
+                            <img class="menu-img menu-img_small menu-img_small_margin" src="assets/img/burger-menu/image2.jpg" alt="picture of Louvre">
+                        </picture>
+                        <picture>
+                            <img class="menu-img menu-img_small" src="assets/img/burger-menu/image3.jpg" alt="picture of Louvre">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -61,16 +66,16 @@
             </div>
             <div class="slider-wrapper">
             <ul class="welcome-slider-container">
-                <li class="welcome-slider-img active"><img class="slider-pic" src="assets/img/slider/1.png" alt="mona Lisa"></li>
-                <li class="welcome-slider-img"><img class="slider-pic" src="assets/img/slider/2.jpeg" alt="picture"></li>
-                <li class="welcome-slider-img"><img class="slider-pic" src="assets/img/slider/3.jpeg" alt="picture"></li>
-                <li class="welcome-slider-img"><img class="slider-pic" src="assets/img/slider/4.jpeg" alt="picture"></li>
-                <li class="welcome-slider-img"><img class="slider-pic" src="assets/img/slider/5.jpeg" alt="picture"></li>
+                <li class="welcome-slider-img _active"><img class="slider-pic" src="assets/img/slider/1.jpg" alt="mona Lisa"></li>
+                <li class="welcome-slider-img"><img class="slider-pic" src="assets/img/slider/2.jpg" alt="picture"></li>
+                <li class="welcome-slider-img"><img class="slider-pic" src="assets/img/slider/3.jpg" alt="picture"></li>
+                <li class="welcome-slider-img"><img class="slider-pic" src="assets/img/slider/4.jpg" alt="picture"></li>
+                <li class="welcome-slider-img"><img class="slider-pic" src="assets/img/slider/5.jpg" alt="picture"></li>
             </ul>
             <div class="slider-switcher">
-                <span class="slider-counter">01|05</span>
+                <span class="slider-counter"></span>
                 <ul class="slider-list">
-                    <li class="slider-list__item"><button class="slider-button active"></button></li>
+                    <li class="slider-list__item"><button class="slider-button _active"></button></li>
                     <li class="slider-list__item"><button class="slider-button"></button></li>
                     <li class="slider-list__item"><button class="slider-button"></button></li>
                     <li class="slider-list__item"><button class="slider-button"></button></li>
@@ -440,6 +445,7 @@
         </ul>
     </div>
 </footer>
+<script src="scripts/swiped-events.js"></script>
 <script src="scripts/burger.js"></script>
 <script src="scripts/video-player.js"></script>
 <script src="scripts/tickets.js"></script>

@@ -9,6 +9,8 @@ const line = document.querySelector('.hamburger__line')
             menu.classList.toggle('_active')
             hamburger.classList.toggle('_active')
             line.classList.toggle('_active')
+            overlay.classList.toggle('_active')
+
         })
     }
 if(overlay){
@@ -17,5 +19,6 @@ if(overlay){
         menu.classList.remove('_active')
         hamburger.classList.remove('_active')
         line.classList.remove('_active')
+        overlay.classList.remove('_active')
     })
 }
